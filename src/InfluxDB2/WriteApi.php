@@ -165,7 +165,7 @@ class WriteApi extends DefaultApi implements Writer
         return $this->worker;
     }
 
-    private function getOption(string $optionName, ?string $precision = null): string
+    private function getOption(string $optionName, ?string $precision = null): ?string
     {
         return isset($precision) ? $precision : $this->options["$optionName"];
     }
